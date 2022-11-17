@@ -1,4 +1,5 @@
 import json
+#Funcion para crear un JSON de book y mostrarlo en consola
 def crearLibros():
     books = """
     {
@@ -33,7 +34,7 @@ def crearLibros():
     with open("books", "r") as libros:
          mustra = json.load(libros)
          print(mustra)
-
+# Funcion para mostrar por consola el JSON anterior
 def muestraConsola():
     with open("books", "r") as libros:
         mustra = json.load(libros)
